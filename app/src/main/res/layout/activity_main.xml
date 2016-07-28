@@ -28,6 +28,14 @@
             android:textAllCaps="false" />
 
         <Button
+            android:id="@+id/TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="TextInputLayout"
+            android:textAllCaps="false" />
+
+        <Button
             android:id="@+id/CoordinatorLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -17,7 +17,8 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.Snackbar, R.id.TabLayout, R.id.CoordinatorLayout, R.id.CollapsingToolbarLayout})
+    @OnClick({R.id.Snackbar, R.id.TabLayout, R.id.TextInputLayout, R.id.CoordinatorLayout,
+            R.id.CollapsingToolbarLayout})
     public void onClick(View view) {
         Intent intent = null;
         switch (view.getId()) {
@@ -27,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.TabLayout:
                 intent = new Intent(this, TabLayoutActivity.class);
+                break;
+
+            case R.id.TextInputLayout:
+                intent = new Intent(this, TextInputLayoutActivity.class);
                 break;
 
             case R.id.CoordinatorLayout:
