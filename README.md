@@ -18,7 +18,7 @@ CollapsingToolbarLayout | 可折叠的MD风格ToolbarLayout
 ## 2. 使用方法 ##
 在build.gradle文件中加上这段代码：compile 'com.android.support:design:22.2.0'
 
-官方博客：http://android-developers.blogspot.jp/2015/05/android-design-support-library.html
+[官方博客](http://android-developers.blogspot.jp/2015/05/android-design-support-library.html)
 
 [Snackbar提示框](http://blog.csdn.net/kong_gu_you_lan/article/details/51944248)
 
