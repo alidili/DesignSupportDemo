@@ -29,7 +29,7 @@ public class TabLayoutActivity extends AppCompatActivity {
     //页卡标题集合
     private List<String> titleList = new ArrayList<>();
     //页卡视图
-    private View view1, view2, view3, view4, view5, view6;
+    private View view;
     //页卡视图集合
     private List<View> viewList = new ArrayList<>();
 
@@ -44,20 +44,8 @@ public class TabLayoutActivity extends AppCompatActivity {
 
     private void initView() {
         layoutInflater = LayoutInflater.from(this);
-        view1 = layoutInflater.inflate(R.layout.activity_tab_item, null);
-        view2 = layoutInflater.inflate(R.layout.activity_tab_item, null);
-        view3 = layoutInflater.inflate(R.layout.activity_tab_item, null);
-        view4 = layoutInflater.inflate(R.layout.activity_tab_item, null);
-        view5 = layoutInflater.inflate(R.layout.activity_tab_item, null);
-        view6 = layoutInflater.inflate(R.layout.activity_tab_item, null);
-
-        //添加页卡视图
-        viewList.add(view1);
-        viewList.add(view2);
-        viewList.add(view3);
-        viewList.add(view4);
-        viewList.add(view5);
-        viewList.add(view6);
+        //设置tab模式，当前为系统默认模式
+        tab.setTabMode(TabLayout.MODE_SCROLLABLE);
 
         //添加页卡标题
         titleList.add("标题一");
@@ -67,15 +55,13 @@ public class TabLayoutActivity extends AppCompatActivity {
         titleList.add("标题五");
         titleList.add("标题六");
 
-        //设置tab模式，当前为系统默认模式
-        tab.setTabMode(TabLayout.MODE_SCROLLABLE);
-        //添加tab选项卡
-        tab.addTab(tab.newTab().setText(titleList.get(0)));
-        tab.addTab(tab.newTab().setText(titleList.get(1)));
-        tab.addTab(tab.newTab().setText(titleList.get(2)));
-        tab.addTab(tab.newTab().setText(titleList.get(3)));
-        tab.addTab(tab.newTab().setText(titleList.get(4)));
-        tab.addTab(tab.newTab().setText(titleList.get(5)));
+        for (int i = 0; i <= 5; i++) {
+            view = layoutInflater.inflate(R.layout.activity_tab_item, null);
+            //添加页卡视图
+            viewList.add(view);
+            //添加tab选项卡
+            tab.addTab(tab.newTab().setText(titleList.get(i)));
+        }
 
         TabAdapter tabAdapter = new TabAdapter(viewList);
         vpView.setAdapter(tabAdapter);
@@ -120,6 +106,5 @@ public class TabLayoutActivity extends AppCompatActivity {
             //页卡标题
             return titleList.get(position);
         }
-
     }
 }
