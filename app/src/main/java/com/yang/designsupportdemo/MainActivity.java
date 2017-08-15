@@ -8,6 +8,16 @@ import android.view.View;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+/**
+ * 主页
+ * Created by yangle on 2017/8/14.
+ * <p>
+ * Website：http://www.yangle.tech
+ * GitHub：https://github.com/alidili
+ * CSDN：http://blog.csdn.net/kong_gu_you_lan
+ * JianShu：http://www.jianshu.com/u/34ece31cd6eb
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
