@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -20,9 +20,9 @@ import butterknife.ButterKnife;
  */
 public class TabLayoutActivity extends AppCompatActivity {
 
-    @Bind(R.id.tab)
+    @BindView(R.id.tab)
     TabLayout tab;
-    @Bind(R.id.vp_view)
+    @BindView(R.id.vp_view)
     ViewPager vpView;
 
     private LayoutInflater layoutInflater;
@@ -67,11 +67,10 @@ public class TabLayoutActivity extends AppCompatActivity {
         vpView.setAdapter(tabAdapter);
         //将TabLayout和ViewPager关联起来。
         tab.setupWithViewPager(vpView);
-        //给Tabs设置适配器
-        tab.setTabsFromPagerAdapter(tabAdapter);
     }
 
     class TabAdapter extends PagerAdapter {
+
         private List<View> viewList;
 
         public TabAdapter(List<View> viewList) {

@@ -10,7 +10,7 @@ import android.view.MotionEvent;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -18,9 +18,9 @@ import butterknife.ButterKnife;
  */
 public class TextInputLayoutActivity extends AppCompatActivity {
 
-    @Bind(R.id.layout_account)
+    @BindView(R.id.layout_account)
     TextInputLayout layoutAccount;
-    @Bind(R.id.layout_password)
+    @BindView(R.id.layout_password)
     TextInputLayout layoutPassword;
 
     private EditText mAccount;

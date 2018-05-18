@@ -7,9 +7,10 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -18,9 +19,9 @@ import butterknife.OnClick;
  */
 public class SnackbarActivity extends AppCompatActivity {
 
-    @Bind(R.id.btnFloatingAction)
+    @BindView(R.id.btnFloatingAction)
     FloatingActionButton btnFloatingAction;
-    @Bind(R.id.layoutRoot)
+    @BindView(R.id.layoutRoot)
     CoordinatorLayout layoutRoot;
 
     @Override
@@ -42,6 +43,12 @@ public class SnackbarActivity extends AppCompatActivity {
         //设置提示文字颜色
         Snackbar.SnackbarLayout snackbarLayout = (Snackbar.SnackbarLayout) snackbar.getView();
         ((TextView) snackbarLayout.findViewById(R.id.snackbar_text)).setTextColor(Color.parseColor("#FFFFFF"));
+
+        // 设置Snackbar宽度
+        View view = snackbar.getView();
+        ViewGroup.LayoutParams params = view.getLayoutParams();
+        params.width = ViewGroup.LayoutParams.MATCH_PARENT;
+        view.setLayoutParams(params);
         snackbar.show();
     }
 }
