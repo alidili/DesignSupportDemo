@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/MaterialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Material Button"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        app:rippleColor="@color/color_white" />
+
+    <android.support.design.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Material Button"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+    <android.support.design.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Material Button"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        app:cornerRadius="10dp" />
+
+    <android.support.design.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Material Button"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        app:icon="@mipmap/ic_launcher"
+        app:iconSize="30dp" />
+
+    <android.support.design.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Material Button"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        app:icon="@mipmap/ic_launcher"
+        app:iconSize="30dp"
+        app:iconTint="@color/colorPrimary" />
+
+    <android.support.design.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Material Button"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        app:icon="@mipmap/ic_launcher"
+        app:iconSize="30dp"
+        app:iconTint="@color/colorPrimary"
+        app:strokeColor="@color/colorPrimaryDark"
+        app:strokeWidth="2dp" />
+
+</LinearLayout>

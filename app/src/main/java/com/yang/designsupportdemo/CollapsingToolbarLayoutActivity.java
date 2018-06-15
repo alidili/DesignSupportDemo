@@ -9,6 +9,10 @@ import android.support.v7.widget.Toolbar;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+/**
+ * Created by yangle on 2016/7/18.
+ */
+
 public class CollapsingToolbarLayoutActivity extends AppCompatActivity {
 
     @BindView(R.id.tool_bar)

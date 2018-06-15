@@ -16,6 +16,7 @@ import butterknife.ButterKnife;
 /**
  * Created by yangle on 2016/7/28.
  */
+
 public class TextInputLayoutActivity extends AppCompatActivity {
 
     @BindView(R.id.layout_account)

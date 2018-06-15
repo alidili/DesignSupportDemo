@@ -26,6 +26,10 @@
                 android:value=".MainActivity" />
         </activity>
         <activity android:name=".TextInputLayoutActivity" />
+        <activity android:name=".MaterialButtonActivity" />
+        <activity android:name=".ChipActivity" />
+        <activity android:name=".MaterialCardViewActivity" />
+        <activity android:name=".BottomAppBarActivity" />
     </application>
 
 </manifest>

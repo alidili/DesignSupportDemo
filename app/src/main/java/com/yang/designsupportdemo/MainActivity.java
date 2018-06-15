@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @OnClick({R.id.Snackbar, R.id.TabLayout, R.id.TextInputLayout, R.id.CoordinatorLayout,
-            R.id.CollapsingToolbarLayout})
+            R.id.CollapsingToolbarLayout, R.id.MaterialButton, R.id.Chip, R.id.MaterialCardView,
+            R.id.BottomAppBar})
     public void onClick(View view) {
         Intent intent = null;
         switch (view.getId()) {
@@ -50,6 +51,25 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.CollapsingToolbarLayout:
                 intent = new Intent(this, CollapsingToolbarLayoutActivity.class);
+                break;
+
+            case R.id.MaterialButton:
+                intent = new Intent(this, MaterialButtonActivity.class);
+                break;
+
+            case R.id.Chip:
+                intent = new Intent(this, ChipActivity.class);
+                break;
+
+            case R.id.MaterialCardView:
+                intent = new Intent(this, MaterialCardViewActivity.class);
+                break;
+
+            case R.id.BottomAppBar:
+                intent = new Intent(this, BottomAppBarActivity.class);
+                break;
+
+            default:
                 break;
         }
         if (intent != null) {

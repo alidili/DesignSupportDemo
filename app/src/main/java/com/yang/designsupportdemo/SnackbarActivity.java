@@ -17,6 +17,7 @@ import butterknife.OnClick;
 /**
  * Created by yangle on 2016/7/18.
  */
+
 public class SnackbarActivity extends AppCompatActivity {
 
     @BindView(R.id.btnFloatingAction)

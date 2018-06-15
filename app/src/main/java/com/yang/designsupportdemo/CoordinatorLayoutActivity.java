@@ -18,6 +18,7 @@ import butterknife.ButterKnife;
 /**
  * Created by yangle on 2016/7/5.
  */
+
 public class CoordinatorLayoutActivity extends AppCompatActivity {
 
     @BindView(R.id.recycler_view)

@@ -5,7 +5,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
@@ -49,6 +49,38 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="CollapsingToolbarLayout"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/MaterialButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Material Button"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/Chip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Chip"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/MaterialCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Material CardView"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/BottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Bottom AppBar"
             android:textAllCaps="false" />
 
     </LinearLayout>

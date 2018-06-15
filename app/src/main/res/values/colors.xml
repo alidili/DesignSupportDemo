@@ -3,9 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="color_white">#FFFFFF</color>
     <color name="color_2F9DD2">#2F9DD2</color>
     <color name="color_333333">#333333</color>
     <color name="color_D4F668">#D4F668</color>
-    <color name="color_FFFFFF">#FFFFFF</color>
     <color name="color_E3E3E3">#E3E3E3</color>
 </resources>

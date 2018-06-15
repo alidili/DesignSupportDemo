@@ -11,6 +11,6 @@
 
     <style name="BarTheme">
         <item name="android:textSize">20dp</item>
-        <item name="android:textColor">@color/color_FFFFFF</item>
+        <item name="android:textColor">@color/color_white</item>
     </style>
 </resources>
