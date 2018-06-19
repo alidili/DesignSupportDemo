@@ -24,7 +24,6 @@
         <android.support.design.chip.Chip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checkable="true"
             android:clickable="true"
             android:text="水波纹颜色"
             android:textAllCaps="false"
@@ -68,7 +67,7 @@
             android:clickable="true"
             android:text="边框"
             android:textAllCaps="false"
-            app:chipStrokeColor="@color/colorPrimary"
+            app:chipStrokeColor="@color/colorAccent"
             app:chipStrokeWidth="2dp" />
 
         <android.support.design.chip.Chip
