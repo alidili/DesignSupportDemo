@@ -1,6 +1,85 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
 
+    <android.support.design.chip.ChipGroup
+        android:id="@+id/chip_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:chipSpacing="10dp"
+        app:singleSelection="false">
 
-</RelativeLayout>
+        <android.support.design.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:clickable="true"
+            android:text="Chip"
+            android:textAllCaps="false" />
+
+        <android.support.design.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:clickable="true"
+            android:text="水波纹颜色"
+            android:textAllCaps="false"
+            app:rippleColor="@color/colorAccent" />
+
+        <android.support.design.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:clickable="true"
+            android:text="图标"
+            android:textAllCaps="false"
+            app:chipIcon="@mipmap/ic_launcher"
+            app:chipIconEnabled="true"
+            app:chipIconSize="20dp"
+            app:iconStartPadding="5dp" />
+
+        <android.support.design.chip.Chip
+            android:id="@+id/chip_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:clickable="true"
+            android:text="删除按钮"
+            android:textAllCaps="false"
+            app:closeIconEnabled="true" />
+
+        <android.support.design.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:clickable="true"
+            android:text="背景"
+            android:textAllCaps="false"
+            app:chipBackgroundColor="@color/colorAccent" />
+
+        <android.support.design.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:clickable="true"
+            android:text="边框"
+            android:textAllCaps="false"
+            app:chipStrokeColor="@color/colorPrimary"
+            app:chipStrokeWidth="2dp" />
+
+        <android.support.design.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:clickable="true"
+            android:text="圆角角度"
+            android:textAllCaps="false"
+            app:chipCornerRadius="0dp" />
+
+    </android.support.design.chip.ChipGroup>
+
+</LinearLayout>
