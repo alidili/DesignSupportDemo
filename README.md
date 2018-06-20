@@ -1,7 +1,11 @@
 # DesignSupportDemo
-材料设计支持库Design Support Library的使用
 
-## 1. 简介 ##
+材料设计支持库Design Support Library的使用 
+
+[![](https://img.shields.io/badge/APK%20download-2.32M-green.svg)](https://github.com/alidili/DesignSupportDemo/raw/master/DesignSupportDemo.apk)
+
+## 1.简介
+
 Design Support Library是Google在2015年的IO大会上发布的全新Material Design支持库，在这个support库里面主要包含了 8 个新的 Material Design组件，最低支持 Android 2.1。
 
 Widget Name	| Description
@@ -14,12 +18,18 @@ NavigationView | DrawerLayout的侧滑界面
 CoordinatorLayout | 超级FrameLayout 
 AppBarLayout | MD风格的滑动Layout
 CollapsingToolbarLayout | 可折叠的MD风格ToolbarLayout
+**以下为 V28 新增组件** |
+MaterialButton | Material风格的Button
+Chip & ChipGroup | 关键字标签组件
+MaterialCardView | Material风格的CardView
+BottomAppBar | 底部标题栏
 
-## 2. 使用方法 ##
+## 2.使用方法
+
 在build.gradle文件中加上这段代码：
 
 ```
-compile 'com.android.support:design:22.2.0'
+implementation 'com.android.support:recyclerview-v7:28.0.0-alpha3'
 ```
 
 [官方博客](http://android-developers.blogspot.jp/2015/05/android-design-support-library.html)
