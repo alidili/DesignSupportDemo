@@ -26,7 +26,7 @@ BottomAppBar | 底部标题栏
 
 ## 2.使用方法
 
-在build.gradle文件中加上这段代码：
+在app根目录的buil.gradle文件中加入依赖：
 
 ```
 implementation 'com.android.support:recyclerview-v7:28.0.0-alpha3'
@@ -43,6 +43,8 @@ implementation 'com.android.support:recyclerview-v7:28.0.0-alpha3'
 [FrameLayout布局的增强版—CoordinatorLayout](http://blog.csdn.net/kong_gu_you_lan/article/details/51956496)
 
 [可折叠的Toolbar——CollapsingToolbarLayout](http://blog.csdn.net/kong_gu_you_lan/article/details/51958313)
+
+[Android Design Support Library v28 新增组件详解](https://blog.csdn.net/kong_gu_you_lan/article/details/80755159)
 
 ## License
 
